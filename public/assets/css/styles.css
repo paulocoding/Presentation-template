@@ -58,6 +58,9 @@ a, a:visited {
 a:hover {
   color: #ee9933; }
 
+p {
+  margin-bottom: 8px; }
+
 .clear:before,
 .clear:after {
   content: " ";
@@ -65,6 +68,13 @@ a:hover {
 
 .clear:after {
   clear: both; }
+
+.progress-bar {
+  height: 2px; }
+  .progress-bar .progress {
+    height: 2px;
+    background-color: #2F839B;
+    width: 1%; }
 
 #mv-right, #mv-left {
   position: fixed;
@@ -83,6 +93,27 @@ a:hover {
 #mv-right:hover, #mv-left:hover {
   opacity: .9; }
 
+.center-h {
+  display: block;
+  margin: 0 auto; }
+
+.center-text {
+  text-align: center; }
+
+.center-v {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.pad-left {
+  padding-left: 35%; }
+
+.pad-left-10 {
+  padding-left: 10%; }
+
 .slide {
   display: block;
   width: 100%;
@@ -96,7 +127,8 @@ a:hover {
   .slide .slide-content {
     padding: 10px 15px;
     display: block;
-    max-width: 768px;
+    max-width: 800px;
+    height: 400px;
     margin: 0 auto; }
     .slide .slide-content ul {
       margin-left: 60px; }
@@ -113,3 +145,5 @@ a:hover {
     color: #2F839B; }
   .slide .green {
     color: #86B715; }
+  .slide .comment {
+    color: #9ba9c1; }
